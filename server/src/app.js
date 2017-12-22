@@ -10,7 +10,7 @@ app.use(cors())
 
 app.post('/register', (req, res) => {
   res.send({
-    message: `Hello ${req.body.email} Je bent nu geregistreerd.`
+    message: `Hello ${req.body.email} Je bent nu geregistreerd. Je wachtwoord is: ${req.body.password}`
   })
 })
 
